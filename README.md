@@ -2,6 +2,9 @@
 
 A simple personal budget tracker built with **.NET 10** and **.NET MAUI**. Add income and expense transactions, review them in a list, and generate a quick report showing total income, total expenses, and net balance. Every transaction added is also appended to a local log file for an auditable history.
 
+<img width="299" height="672" alt="Screenshot 2026-10-14 at 13 11 23" src="https://github.com/user-attachments/assets/a1e6b120-8ec8-452a-8ad4-7b0cc0a6aa98" />
+
+
 ## Project structure
 
 ```
@@ -70,8 +73,6 @@ dotnet build -t:Run -f net10.0-android
 # Windows
 dotnet build -t:Run -f net10.0-windows10.0.19041.0
 ```
-
-> **Note:** Building for the iOS Simulator requires `codesign` to succeed, which can fail on some macOS/Xcode combinations with a `resource fork, Finder information, or similar detritus not allowed` error. This is a known friction point between newer Xcode releases and the .NET iOS workload (see the `ValidateXcodeVersion` note in [`BudgetTracker.Maui.csproj`](BudgetTracker/BudgetTracker.Maui/BudgetTracker.Maui.csproj)). If you hit it, try `dotnet workload update` or match your Xcode version to the one expected by the installed MAUI workload.
 
 ### Build the Core library only
 
