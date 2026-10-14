@@ -1,0 +1,60 @@
+# =========================
+# .NET / MSBuild build output
+# =========================
+bin/
+obj/
+out/
+publish/
+*.pdb
+
+# =========================
+# .NET MAUI platform-specific build artifacts
+# =========================
+*.app
+*.ipa
+*.apk
+*.aab
+*.msix
+*.appx
+*.appxupload
+
+# =========================
+# Rider / Visual Studio / VS Code
+# =========================
+.vs/
+.vscode/
+*.user
+*.userosscache
+*.sln.docstates
+*.suo
+.idea/
+*.DotSettings.user
+
+# =========================
+# NuGet
+# =========================
+*.nupkg
+*.snupkg
+**/packages/*
+!**/packages/build/
+.nuget/
+
+# =========================
+# OS files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Logs and local app data dumped next to the project
+# =========================
+*.log
+logs/
+
+# =========================
+# Test results
+# =========================
+TestResults/
+coverage/
+*.coverage
+*.coveragexml
